@@ -1,0 +1,127 @@
+main{
+    background-color: rgb(250, 250, 250);
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 0;
+    order: 4;
+    padding: 0;
+    position: relative;
+}
+
+.wrapper{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    height:60px;
+    line-height:60px;
+    justify-content: center;
+    max-width: calc(935px + 40px);
+    padding: 0 20px;
+    transition: height var(--desktop-nav-anim-duration) ease-in-out;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar{
+    height:60px;
+    button{
+        border:none;
+        outline:none;
+        background: transparent;
+    }
+    .logo-block{
+        flex: 1 0 127px;
+        .select-folowing-favorites{
+            align-items: center;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            padding: 8px;
+        }
+    }
+    .search-block{
+        align-items: center;
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: column;
+        height: 36px;
+        min-width: 125px;
+        position: relative;
+
+        .search-field{
+
+            background: rgb(239, 239, 239);
+            border: 0;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color: rgb(38, 38, 38);
+            font-size: 16px;
+            height: 100%;
+            outline: none;
+            padding: 7px 16px;
+            width: 100%;
+            z-index: 2;
+        }
+    }
+
+    #navbarSupportedContent {
+        flex: 1 0 127px;
+        .header-right-controls {
+            align-content: center;
+            align-items: center;
+            display: flex;
+            flex: 1 0 0%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            .header-control-icons{
+                align-items: stretch;
+                border: 0;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                flex-shrink: 0;
+                font: inherit;
+                font-size: 100%;
+                margin: 0;
+                padding: 0;
+                padding-left: 24px;
+                position: relative;
+                vertical-align: baseline;
+                white-space: nowrap;
+
+                ._acut:not(:first-child) {
+                    margin-left: 22px;
+                }
+            }
+            .navbar-dropdown{
+                height:60px;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+            }
+            .little-circle-icon{
+                box-sizing: border-box;
+                display:flex;
+                width:24px!important;
+                height:24px;
+                overflow: hidden;
+                position: relative;
+                img{
+                    cursor:pointer;
+                    border-radius: 100%;
+                    width:100%;
+                }
+            }
+        }
+    }
+}
