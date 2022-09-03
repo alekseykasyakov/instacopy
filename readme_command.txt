@@ -12,3 +12,14 @@ npm run prod
 
 Команда  продолжит работу в консоли и будет следить за изменениями во всех соответствующих файлах CSS и JavaScript.
 npm run watch
+
+робота з бд в консолі
+php artisan tinker
+
+User::all()
+
+Добавляємо username в
+- контроллер
+- міграцію
+- клас(модель)
+потім php artisan migrate:fresh

@@ -1,13 +1,11 @@
 main{
     background-color: rgb(250, 250, 250);
     align-items: stretch;
+    justify-content: center;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 0;
     margin: 0;
-    order: 4;
     padding: 0;
     position: relative;
 }
@@ -105,7 +103,7 @@ main{
             .navbar-dropdown{
                 height:60px;
                 display:flex;
-                flex-direction:column;
+                flex-direction:row;
                 justify-content: center;
                 align-items: center;
             }
