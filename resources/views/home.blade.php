@@ -4,13 +4,13 @@
 <div class="container d-flex justify-content-center">
     <div class="container-body">
         <div class="row justify-content-center">
-            <div class="col-3 pt-2 ">
+            <div class="col-4 pt-2 ">
                 <img src="/userImages/291766065_1354382998383895_5866895574866213624_n.jpg" class="rounded-circle ps-5 pe-5">
             </div>
-            <div class="col-9 pt-5">
+            <div class="col-8 pt-3">
                 <div class="d-flex flex-row">
                     <div class="pe-3">
-                        <h2>alekseykasykov</h2>
+                        <h2>{{ $user->username }}</h2>
                     </div>
                     <div class="pe-3">
 {{--                        <a class="btn btn-sm btn-outline-dark fw-bold" href="/accounts/edit/" role="link" tabindex="0">Редагувати профіль</a>--}}
@@ -31,13 +31,13 @@
         </div>
         <div class="row pt-5">
             <div class="col-4">
-                <img src="userImages/120301994_329602551597787_1805050153629392299_n.jpg" class="w-100">
+                <img src="./userImages/120301994_329602551597787_1805050153629392299_n.jpg" class="w-100">
             </div>
             <div class="col-4">
-                <img src="userImages/120301994_329602551597787_1805050153629392299_n.jpg" class="w-100">
+                <img src="userImages/67430494_1244659498991062_3099179561676303890_n.jpg" class="w-100">
             </div>
             <div class="col-4">
-                <img src="userImages/120301994_329602551597787_1805050153629392299_n.jpg" class="w-100">
+                <img src="userImages/65954126_842259249478842_6702664647258512324_n.jpg" class="w-100">
             </div>
             <div class="col-4">
                 <img src="userImages/120301994_329602551597787_1805050153629392299_n.jpg" class="w-100">

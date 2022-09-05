@@ -13,6 +13,10 @@ npm run prod
 Команда  продолжит работу в консоли и будет следить за изменениями во всех соответствующих файлах CSS и JavaScript.
 npm run watch
 
+допомога в описі команд:
+php artisan help make:controller
+
+
 робота з бд в консолі
 php artisan tinker
 
@@ -23,3 +27,9 @@ User::all()
 - міграцію
 - клас(модель)
 потім php artisan migrate:fresh
+
+створити контроллер
+$ php artisan make:controller ProfilesController
+
+стврити модель Profile і міграцію до неї (-m)
+ php artisan make:model Profile -m

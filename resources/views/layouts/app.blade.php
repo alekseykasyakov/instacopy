@@ -130,7 +130,7 @@
                                             <div class="nav-item dropdown">
                                                 <a id="navbarDropdown"  href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                                     <span class="little-circle-icon" role="link" tabindex="0" style="width: 24px; height: 24px;">
-                                                        <img alt="Основна світлина alekseykasykov" class="" crossorigin="anonymous" draggable="false" src="/thum_user/my_icon.jpg">
+                                                        <img alt="{{ Auth::user()->username }}" class="" crossorigin="anonymous" draggable="false" src="/thum_user/my_icon.jpg">
                                                     </span>
                                                 </a>
 
