@@ -33,3 +33,25 @@ $ php artisan make:controller ProfilesController
 
 стврити модель Profile і міграцію до неї (-m)
  php artisan make:model Profile -m
+
+створити міграцію для постів
+$ php artisan make:model Post -m
+
+////////////////////////////////////////////////
+User model:
+public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
+________________________________________________
+Post model
+public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+//////////////////////////////////////////////////
+web.php :
+Route::get('/p', 'PostController@create');
+terminal:
+php artisan make:controller PostController

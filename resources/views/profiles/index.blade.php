@@ -26,7 +26,9 @@
                     <div class="margin-left-40">Читачі: <span>207</span></div>
                     <div class="margin-left-40">Стежить: <span>603</span></div>
                 </div>
-                <div class="user-name pt-3"><span>Kasiakov Oleksiy</span></div>
+                <div class="user-name pt-3"><span>{{ $user->name }}</span></div>
+                <div class="user-description pt-3"><span>{{ $user->profile->description }}</span></div>
+                <div class="user-url pt-3"><a href="#">{{ $user->profile->url }}</a></div>
             </div>
         </div>
         <div class="row pt-5">
