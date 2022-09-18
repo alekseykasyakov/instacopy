@@ -14,11 +14,10 @@
                     </div>
                     <div class="pe-3">
 {{--                        <a class="btn btn-sm btn-outline-dark fw-bold" href="/accounts/edit/" role="link" tabindex="0">Редагувати профіль</a>--}}
-                        @guest
-                            <button class="btn btn-outline-dark btn-sm"><div><strong>Стежити</strong></div></button>
-                        @endguest
                         @can('update', $user->profile)
                         <a href="/profile/{{ $user->id }}/edit" class="btn btn-outline-dark btn-sm"><div><strong>Редагувати профіль</strong></div></a>
+                        @else
+                        <follow-button user-id="{{ $user->id }}"></follow-button>
                         @endcan
                     </div>
                     <div class="pe-3">

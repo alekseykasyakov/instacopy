@@ -21,6 +21,7 @@ Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //Route::get('/p', 'PostController@create');
+Route::post('follow/{user}', [App\Http\Controllers\FollowsController::class, 'store']);
 
 Route::get('/p/create', [App\Http\Controllers\PostController::class, 'create']);
 Route::get('/p/{post}', [App\Http\Controllers\PostController::class, 'show']);
