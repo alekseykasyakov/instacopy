@@ -55,3 +55,6 @@ web.php :
 Route::get('/p', 'PostController@create');
 terminal:
 php artisan make:controller PostController
+
+бібліотека роботи з зображенняями:
+$ composer require intervention/image

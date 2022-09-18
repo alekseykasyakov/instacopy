@@ -43,6 +43,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+
+
     public function posts()
     {
         return $this->hasMany(Post::class)->orderBy('created_at','DESC');
@@ -51,5 +53,20 @@ class User extends Authenticatable
     public function profile()
     {
        return $this->hasOne(Profile::class);
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::created(function ($user){
+            Profile::create([
+                'user_id' => $user->id,
+                'title' => $user->username,
+                'description' => 'ahalamahala',
+                'url' => 'https://youtube.com',
+            ]);
+        });
+
     }
 }
