@@ -17,7 +17,7 @@
                         @can('update', $user->profile)
                         <a href="/profile/{{ $user->id }}/edit" class="btn btn-outline-dark btn-sm"><div><strong>Редагувати профіль</strong></div></a>
                         @else
-                        <follow-button user-id="{{ $user->id }}"></follow-button>
+                        <follow-button user-id="{{ $user->id }}" follows="{{ $follows }}"></follow-button>
                         @endcan
                     </div>
                     <div class="pe-3">
@@ -26,9 +26,9 @@
                     </div>
                 </div>
                 <div class="d-flex flex-row justify-content-start pt-3">
-                    <div class="margin-left-40"><span>{{ $user->posts->count()  }}</span> дописів</div>
-                    <div class="margin-left-40">Читачі: <span>207</span></div>
-                    <div class="margin-left-40">Стежить: <span>603</span></div>
+                    <div class="margin-left-40"><span>{{ $postCount }}</span> дописів</div>
+                    <div class="margin-left-40">Читачі: <span>{{ $followersCount }}</span></div>
+                    <div class="margin-left-40">Стежить: <span>{{ $followingCount }}</span></div>
                 </div>
                 <div class="user-name pt-2"><span>{{ $user->profile->title }}</span></div>
                 <div class="user-description"><span>{{ $user->profile->description }}</span></div>
